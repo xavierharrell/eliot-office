@@ -1,0 +1,1 @@
+$(function(){$(".testi-frame").slick({dots:!0}),$(".video-frame").slick({dots:!0,slidesToShow:1,slidesToScroll:1,autoplay:!0})}),$(document).foundation();
