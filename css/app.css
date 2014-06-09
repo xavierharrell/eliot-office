@@ -5419,7 +5419,7 @@ th.hide-for-touch {
   display: block;
   margin: auto; }
 
-.blog-roll {
+.blog-roll, .news-roll {
   border-style: solid;
   border-width: 1px;
   border-color: #d8d8d8;
@@ -5427,21 +5427,27 @@ th.hide-for-touch {
   padding: 1.25rem;
   background: #f2f2f2;
   background-color: #00dffc; }
-  .blog-roll > :first-child {
+  .blog-roll > :first-child, .news-roll > :first-child {
     margin-top: 0; }
-  .blog-roll > :last-child {
+  .blog-roll > :last-child, .news-roll > :last-child {
     margin-bottom: 0; }
-  .blog-roll h1, .blog-roll h2, .blog-roll h3, .blog-roll h4, .blog-roll h5, .blog-roll h6, .blog-roll p, .blog-roll li {
+  .blog-roll h1, .news-roll h1, .blog-roll h2, .news-roll h2, .blog-roll h3, .news-roll h3, .blog-roll h4, .news-roll h4, .blog-roll h5, .news-roll h5, .blog-roll h6, .news-roll h6, .blog-roll p, .news-roll p, .blog-roll li, .news-roll li {
     color: #333333; }
-  .blog-roll h1, .blog-roll h2, .blog-roll h3, .blog-roll h4, .blog-roll h5, .blog-roll h6 {
+  .blog-roll h1, .news-roll h1, .blog-roll h2, .news-roll h2, .blog-roll h3, .news-roll h3, .blog-roll h4, .news-roll h4, .blog-roll h5, .news-roll h5, .blog-roll h6, .news-roll h6 {
     line-height: 1;
     margin-bottom: 0.625rem; }
-    .blog-roll h1.subheader, .blog-roll h2.subheader, .blog-roll h3.subheader, .blog-roll h4.subheader, .blog-roll h5.subheader, .blog-roll h6.subheader {
+    .blog-roll h1.subheader, .news-roll h1.subheader, .blog-roll h2.subheader, .news-roll h2.subheader, .blog-roll h3.subheader, .news-roll h3.subheader, .blog-roll h4.subheader, .news-roll h4.subheader, .blog-roll h5.subheader, .news-roll h5.subheader, .blog-roll h6.subheader, .news-roll h6.subheader {
       line-height: 1.4; }
-  .blog-roll ul li img {
+  .blog-roll ul li img, .news-roll ul li img {
     float: left;
     display: block;
-    width: 50px; }
-  .blog-roll ul li a, .blog-roll ul li p {
-    margin: 0 10px 0 70px;
+    width: 75px;
+    margin-right: 20px; }
+  .blog-roll ul li a, .news-roll ul li a, .blog-roll ul li p, .news-roll ul li p {
+    margin: 0 10px 0 0px;
     font-size: 13px; }
+
+.news-roll ul {
+  list-style-type: none; }
+.news-roll ul li a {
+  display: inline-block; }
