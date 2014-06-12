@@ -30,20 +30,29 @@ img{
 }
 
 .blog-roll{
-  @include panel;
-  background-color: #00dffc;
-  ul li img{
+@extend .panel;
+overflow: hidden;
+
+li{
     float: left;
-    display: block;
-    width: 75px;
-    margin-right: 20px;
+    overflow: hidden;
+    padding: 22px 0;
+  }
+li img{
+ float: left;
+  height: 75px;
+  width: 75;
+  margin: 0 25px 0 0;
 }
-ul li a, ul li p{
-      margin: 0 10px 0 0px;
-      font-size: 13px;
+
+.meta-desc{
+  overflow: hidden;
+  margin: 0 0 10px;
 }
 
 }
+
+
 
 .news-roll{
   @extend .blog-roll;
