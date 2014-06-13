@@ -1,3 +1,11 @@
+/* Mixins */
+
+@mixin box($top, $left, $blur, $color){
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+}
+
 .odd {
     background-color: #f4f3f3;
     border-bottom: 1px solid #d5d5d5;
@@ -30,6 +38,7 @@
 }
 
 .blog-roll {
+    @include box(0px, 10px, 0px, #b9b9b9);
     @extend .panel;
     overflow: hidden;
     li img {
