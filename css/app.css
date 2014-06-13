@@ -4929,3 +4929,11 @@ footer {
   background-color: #12456b; }
   .sub-footer p {
     color: #ffffff; }
+
+.overlay {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transition: 0.3;
+  opacity: 1;
+  background-color: #dddddd; }
