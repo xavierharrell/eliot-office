@@ -4917,6 +4917,10 @@ ul.meta-social {
 .news-roll ul li a {
   display: inline-block; }
 
+.meta-data li {
+  font-size: 11px;
+  margin-left: 0px; }
+
 footer {
   background-color: #1b78ac; }
   footer h4 {
