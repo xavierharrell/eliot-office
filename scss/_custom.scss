@@ -9,12 +9,12 @@
 .odd {
     background-color: #f4f3f3;
     border-bottom: 1px solid #d5d5d5;
-    padding: 15px 0px;
+    padding: 30px 0px;
 }
 
 .even {
     @extend .odd;
-    background-color: #fff;
+    background: #71a441 url(/img/pixel_weave.png);
 }
 
 .office {
@@ -24,6 +24,7 @@
     background-size: cover;
     background-position: center center;
     height: 500px;
+    padding-top: 7em;
     }
 
 .testi-frame img {
@@ -93,8 +94,10 @@ footer{
 
 .sub-footer{
   background-color: #12456b;
+  padding: 20px;
   p{
     color: #ffffff;
+    font-size: 0.9em;
   }
 }
 
@@ -107,4 +110,20 @@ footer{
     p{
         color: #fff;
     }
+}
+
+.home-panel{
+    @include panel;
+    background: rgba($primary-color, .4);
+    margin: 0 auto;
+    border: 0px;
+    p{
+        font-size: 1em;
+        color: #fff;
+        line-height: 1.9em;
+    }
+}
+
+i{
+    display: inline-block !important;
 }

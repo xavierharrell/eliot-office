@@ -4880,17 +4880,18 @@ th.hide-for-touch {
 .odd, .even {
   background-color: #f4f3f3;
   border-bottom: 1px solid #d5d5d5;
-  padding: 15px 0px; }
+  padding: 30px 0px; }
 
 .even {
-  background-color: #fff; }
+  background: #71a441 url(/img/pixel_weave.png); }
 
 .office {
   background: url(http://placehold.it/2000x600);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 500px; }
+  height: 500px;
+  padding-top: 7em; }
 
 .testi-frame img {
   display: block;
@@ -4944,9 +4945,11 @@ footer {
     color: #eeeeee; }
 
 .sub-footer {
-  background-color: #12456b; }
+  background-color: #12456b;
+  padding: 20px; }
   .sub-footer p {
-    color: #ffffff; }
+    color: #ffffff;
+    font-size: 0.9em; }
 
 .product-panel {
   border-style: solid;
@@ -4971,3 +4974,32 @@ footer {
     background-color: #00a7da; }
   .product-panel p {
     color: #fff; }
+
+.home-panel {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d8d8d8;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  background: #f2f2f2;
+  background: rgba(0, 140, 186, 0.4);
+  margin: 0 auto;
+  border: 0px; }
+  .home-panel > :first-child {
+    margin-top: 0; }
+  .home-panel > :last-child {
+    margin-bottom: 0; }
+  .home-panel h1, .home-panel h2, .home-panel h3, .home-panel h4, .home-panel h5, .home-panel h6, .home-panel p, .home-panel li, .home-panel dl {
+    color: #333; }
+  .home-panel h1, .home-panel h2, .home-panel h3, .home-panel h4, .home-panel h5, .home-panel h6 {
+    line-height: 1;
+    margin-bottom: 0.625rem; }
+    .home-panel h1.subheader, .home-panel h2.subheader, .home-panel h3.subheader, .home-panel h4.subheader, .home-panel h5.subheader, .home-panel h6.subheader {
+      line-height: 1.4; }
+  .home-panel p {
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.9em; }
+
+i {
+  display: inline-block !important; }
