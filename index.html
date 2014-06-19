@@ -13,7 +13,7 @@
     </head>
     <body>
       <!-- Navigation -->
-      <div class="contain-to-grid">
+      <div class="contain-to-grid fixed">
         <nav class="top-bar fixed" data-topbar>
           <ul class="title-area">
             <li class="name">
@@ -45,7 +45,7 @@
       <!-- Image of the location Skyline -->
       <section class="office">
         <div class="row full-width">
-          <img src="http://placehold.it/2000x550" alt="">
+
         </div>
       </section>
       <!-- End of location Skyline -->
@@ -127,7 +127,7 @@
         <div class="row">
           <div class="row">
             <div class="small-12 medium-4 large-4 columns">
-              <div class="product-panel text-center clearfix">
+              <div class="product-panel text-center clearfix animate" data-animate="flipInX">
                 <img src="http://placehold.it/300x150" alt="">
                 <h3>Product Name</h3>
                 <hr>
@@ -137,7 +137,7 @@
               </div>
             </div>
             <div class="small-12 medium-4 large-4 columns">
-              <div class="product-panel text-center clearfix">
+              <div class="product-panel text-center clearfix animate" data-animate="flipInY">
                 <img src="http://placehold.it/300x150" alt="">
                 <h3>Product Name</h3>
                 <hr>
@@ -147,7 +147,7 @@
               </div>
             </div>
             <div class="small-12 medium-4 large-4 columns">
-              <div class="product-panel text-center clearfix">
+              <div class="product-panel text-center clearfix animate" data-animate="flipInX">
                 <img src="http://placehold.it/300x150" alt="">
                 <h3>Product Name</h3>
                 <hr>
@@ -160,44 +160,52 @@
         </div>
       </section>
       <!-- End of Featured Product -->
-      <!-- Employee Testimonials -->
+      <!-- Video Testimonials -->
       <section class="odd">
         <div class="row">
-          <div class="small-12 medium-5 large-5 columns text-center">
-            <h3>What our reps are saying?</h3>
-            <hr>
-            <div class="testi-frame">
-              <div class="testi-card">
-                <img class="text-center" src="http://placehold.it/75x75" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-              <div class="testi-card">
-                <img src="http://placehold.it/75x75" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="small-12 medium-5 large-5 columns">
+          <div class="small-12 medium-6 large-6 columns text-center">
             <h3>Video Testiomonials</h3>
             <hr>
             <div class="video-frame">
-              <div><img src="http://placehold.it/275x150" alt=""></div>
-              <div><img src="http://placehold.it/275x150" alt=""></div>
+              <div><img src="http://placehold.it/400x200" alt=""></div>
+              <div><img src="http://placehold.it/400x200" alt=""></div>
             </div>
           </div>
-          <div class="small-12 medium-2 large-2 columns">
+          <div class="small-12 medium-6 large-6 columns">
             <h3>Interested?</h3>
             <hr>
             <a href="#" class="button small">Visit Our Careers Site</a>
           </div>
         </div>
       </section>
-      <!-- End Of Employee Testimonials -->
-      <section class="even"><!-- Modules from Main Site -->
+      <!-- End Of Video Testimonials -->
+      <section class="even">
+        <div class="row">
+          <div class="small-12 medium-12 large-12 columns text-center">
+          <h3>What our people are saying?</h3>
+            <hr>
+            <div class="testi-frame">
+              <div class="testi-card">
+                <img class="text-center" src="http://placehold.it/100x100" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="testi-card">
+                <img src="http://placehold.it/100x100" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+              <div class="testi-card">
+                <img src="http://placehold.it/100x100" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="odd"><!-- Modules from Main Site -->
       <!-- Blog Section -->
       <div class="row">
         <div class="small-12 medium-4 large-4 columns">
-          <h4>Blog</h4>
+          <h3>Blog</h3>
           <div class="panel blog-roll">
             <ul class="no-bullet">
               <li>
@@ -210,11 +218,6 @@
                   <span class="meta-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, sit.</span>
                   <a class="button tiny" href="">Learn more</a>
                 </div>
-                <ul class="meta-social">
-                  <li><a href="">lorem</a></li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                </ul>
               </li>
               <hr>
               <li>
@@ -250,7 +253,7 @@
         </div>
         <!-- End of News Section -->
         <!-- Contact Section -->
-        <div class="small-4 medium-4 large-4 columns">
+        <div class="small-12 medium-4 large-4 columns">
           <h3>Contact</h3>
           <form>
             <div class="row">
@@ -303,27 +306,26 @@
       <footer>
       <div class="row">
         <div class="small-4 medium-4 large-4 columns">
-        <h4>Title</h4>
+        <h4>Office Hours</h4>
           <ul class="no-bullet">
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
+            <li>Phone Number: </li>
+            <li>Fax Number: </li>
+            <li>Email: </li>
           </ul>
         </div>
         <div class="small-4 medium-4 large-4 columns">
-          <h4>Title</h4>
+          <h4>Contact Hours</h4>
           <ul class="no-bullet">
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
+            <li>M-F: 8-5</li>
+            <li>Sat-Sun: Closed</li>
           </ul>
         </div>
         <div class="small-4 medium-4 large-4 columns">
-          <h4>Title</h4>
+          <h4>Follow Us</h4>
           <ul class="no-bullet">
-            <li>Lorem</li>
-            <li>Lorem</li>
-            <li>Lorem</li>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Linkedin</li>
           </ul>
         </div>
       </div>
@@ -334,7 +336,7 @@
     <footer class="sub-footer">
     <div class="row">
       <div class="small-6 medium-6 large-6 columns">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, labore, illo iusto minima veniam quidem libero quas nostrum ipsa sapiente!</p>
+       <img src="http://placehold.it/300x150" alt="">
       </div>
       <div class="small-6 medium-6 large-6 columns">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt maiores earum temporibus laborum perferendis officia et aliquam qui fuga cum.</p>
@@ -345,6 +347,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="bower_components/jquery-waypoints/waypoints.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

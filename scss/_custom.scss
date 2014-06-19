@@ -18,19 +18,13 @@
 }
 
 .office {
-    border-bottom: 1px solid #d5d5d5;
-    img {
-        width: 100%;
-        height: auto;
+    background: url(http://placehold.it/2000x600);
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
     }
-}
-
-.full-width {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: initial;
-}
 
 .testi-frame img {
     display: block;
@@ -57,7 +51,7 @@
     }
 }
 
-ul.meta-social {
+/*ul.meta-social {
     font-size: 0.8em;
     li {
         display: inline-block;
@@ -69,7 +63,7 @@ ul.meta-social {
             border-radius: 1px 2px 2px 2px;
         }
     }
-}
+}*/
 
 .news-roll {
     @extend .blog-roll;
@@ -106,9 +100,9 @@ footer{
 
 .product-panel{
     @include panel(lighten($primary-color, 20%), 15px 10px 5px);
+    transition: all 0.3s ease-in;
     &:hover, &:focus{
         background-color: scale-color($primary-color, $lightness: 10%);
-      transition: all 0.1s ease-in;
     }
     p{
         color: #fff;
