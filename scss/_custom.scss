@@ -1,6 +1,6 @@
 /* Mixins */
 
-@mixin box($top, $left, $blur, $color){
+@mixin box($top, $left, $blur, $color) {
     -webkit-box-shadow: $top $left $blur $color;
     -moz-box-shadow: $top $left $blur $color;
     box-shadow: $top $left $blur $color;
@@ -18,14 +18,28 @@
 }
 
 .office {
-    background: url(http://placehold.it/2000x600);
+    position: relative;
+    background: url(/img/skyline-test.jpg);
     //background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 500px;
-    padding-top: 7em;
+    padding: 4em 0;
+
+}
+
+.home-panel {
+    @include panel;
+    background: rgba($primary-color, 0.6);
+    margin: 0 auto;
+    border: 0px;
+    p {
+        font-size: 1em;
+        color: #fff;
+        line-height: 1.9em;
     }
+}
 
 .testi-frame img {
     display: block;
@@ -74,56 +88,77 @@
     ul li a {
         display: inline-block;
     }
+    .news-date {
+        float: left;
+        margin: 0 8px 10px 0;
+        width: 60px;
+        height: 90px;
+        background: $primary-color;
+        text-align: center;
+        padding: 5px 5px;
+        p {
+            color: #fff;
+        }
+        span {
+            display: block;
+            position: relative;
+            font-size: 30px;
+            &:after {
+                position: absolute;
+                content: '';
+                width: 40px;
+                height: 1px;
+                background-color: #fff;
+                left: 50%;
+                bottom: 0;
+                margin-left: -20px;
+            }
+        }
+    }
 }
 
-.meta-data li{
+.meta-data li {
     font-size: 11px;
     margin-left: 0px;
 }
 
-footer{
-  background-color: #1b78ac;
-  h4{
-    color: #eeeeee;
-    text-transform: uppercase;
-  }
-  li{
-    color: #eeeeee;
-  }
+footer {
+    background-color: #1b78ac;
+    h4 {
+        color: #eeeeee;
+        text-transform: uppercase;
+    }
+    li {
+        color: #eeeeee;
+    }
 }
 
-.sub-footer{
-  background-color: #12456b;
-  padding: 20px;
-  p{
-    color: #ffffff;
-    font-size: 0.9em;
-  }
+.sub-footer {
+    background-color: #12456b;
+    padding: 20px;
+    p {
+        color: #ffffff;
+        font-size: 0.9em;
+    }
 }
 
-.product-panel{
+.product-panel {
     @include panel(lighten($primary-color, 20%), 15px 10px 5px);
     transition: all 0.3s ease-in;
-    &:hover, &:focus{
+    &:hover, &:focus {
         background-color: scale-color($primary-color, $lightness: 10%);
     }
-    p{
+    p {
         color: #fff;
     }
 }
 
-.home-panel{
-    @include panel;
-    background: rgba($primary-color, .4);
-    margin: 0 auto;
-    border: 0px;
-    p{
-        font-size: 1em;
-        color: #fff;
-        line-height: 1.9em;
-    }
-}
-
-i{
+i {
     display: inline-block !important;
+    font-size: 20px;
+}
+
+/* Misc */
+.icon-base{
+    color: $primary-color;
 }

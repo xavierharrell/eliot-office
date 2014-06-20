@@ -8,7 +8,8 @@ $(function () {
             dots: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false
+            autoplay: false,
+            centerMode: true
     });
 });
 /* Waypoint and Animation */
