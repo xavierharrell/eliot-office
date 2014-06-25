@@ -4887,7 +4887,7 @@ th.hide-for-touch {
 
 .office {
   position: relative;
-  background: url(/img/skyline-test.jpg);
+  background: url(/img/office/salt-lake-city.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -5135,3 +5135,11 @@ figure {
     opacity: 0.4;
     -webkit-transform: scale(1.75);
     transform: scale(1.75); }
+
+@media screen and (max-width: 60.5em) {
+  .grid figure {
+    width: 50%; } }
+
+@media screen and (max-width: 41.5em) {
+  .grid figure {
+    width: 100%; } }

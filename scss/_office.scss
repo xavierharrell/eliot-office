@@ -121,3 +121,15 @@ figure {
         transform: scale(1.75);
     }
 }
+
+@media screen and (max-width: 60.5em) {
+    .grid figure {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 41.5em) {
+    .grid figure {
+        width: 100%;
+    }
+}
