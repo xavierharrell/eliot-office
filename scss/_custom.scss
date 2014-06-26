@@ -14,23 +14,74 @@
 
 .even {
     @extend .odd;
-    background: #71a441 url(/img/pixel_weave.png);
+    background: #71a441 url(/img/halftone.png);
 }
+
+.hiring {
+    position: relative;
+    background: url(/img/office.jpg);
+    min-height: 20em;
+    background-size: cover;
+    background-position: fixed;
+    .overlay {
+        background: rgba($primary-color, 0.8);
+        height: 20em;
+       max-width: 100%;
+        h4 {
+            margin: 0 auto;
+            padding: 10%;
+            color: #fff;
+        }
+    }
+}
+
+/**
+*
+* Office Hero Section
+*
+**/
 
 .office {
     position: relative;
-    background: url(/img/office/salt-lake-city.jpg);
-    //background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    padding: 4em 0;
+    display: block;
+    max-width: 1900px;
+    max-height: 600px;
+    overflow: hidden;
+    img {
+        z-index: 1;
+        height: 100%;
+        padding: 0;
+        margin-top: -20em;
+        /* just in case, to force correct aspect ratio */
+        height: auto !important;
+        width: auto\9;
+        /* ie8+9 */
+        /* lt ie8 */
+        -ms-interpolation-mode: bicubic;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+    }
+}
 
+@media only screen and (max-width: 980px) {
+    .office {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    .office img {
+        margin-top: -50px;
+        height: 100%;
+    }
 }
 
 .home-panel {
     @include panel;
+    position: absolute;
+    width: 50em;
+    top: -50em;
+    left: -5em;
     background: rgba($primary-color, 0.6);
     margin: 0 auto;
     border: 0px;
@@ -38,7 +89,12 @@
         font-size: 1em;
         color: #fff;
         line-height: 1.9em;
+        text-shadow: -5px 3px 10px rgba(#1c1e21, 0.8);
     }
+}
+
+.mobile-panel {
+    @extend .home-panel;
 }
 
 .testi-frame img {
@@ -65,20 +121,6 @@
         line-height: 1;
     }
 }
-
-/*ul.meta-social {
-    font-size: 0.8em;
-    li {
-        display: inline-block;
-        margin-bottom: 10px;
-        padding: 2px;
-        a {
-            background: #dfdfdf;
-            padding: 4px 10px 4px 5px;
-            border-radius: 1px 2px 2px 2px;
-        }
-    }
-}*/
 
 .news-roll {
     @extend .blog-roll;
@@ -151,6 +193,10 @@ footer {
     p {
         color: #fff;
     }
+    h3 {
+        color: #fff;
+        text-transform: uppercase;
+    }
 }
 
 i {
@@ -159,6 +205,6 @@ i {
 }
 
 /* Misc */
-.icon-base{
+.icon-base {
     color: $primary-color;
 }

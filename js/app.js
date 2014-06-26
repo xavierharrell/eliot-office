@@ -9,9 +9,17 @@ $(function () {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: false,
-            centerMode: true
+            centerMode: true,
+            centerPadding: '200px',
     });
 });
+
+    $('.scroll').smoothScroll({
+        offset: -80,
+        speed: 1000
+    });
+
+
 /* Waypoint and Animation */
 $('.animate').css('opacity', '0');
 $('.animate').waypoint(function(){
@@ -24,5 +32,8 @@ $('.animate').waypoint(function(){
     },{offset: '50%'});
 
 
+
 $(document).foundation();
+
+new WOW().init();
 
