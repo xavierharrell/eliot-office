@@ -17,6 +17,7 @@ $(function () {
     $('.scroll').smoothScroll({
         offset: -80,
         speed: 1000
+
     });
 
 
