@@ -3082,7 +3082,7 @@ i {
 
 .grid {
   overflow: hidden;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
   list-style: none;
   text-align: center; }
@@ -3116,14 +3116,10 @@ figure {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%; }
   figure a {
-    z-index: 1000;
-    text-indent: 200%;
     white-space: nowrap;
-    font-size: 0;
-    opacity: 0; }
+    font-size: 25px; }
   figure h2 {
     word-spacing: -0.15em;
     font-weight: 300;
@@ -3136,52 +3132,49 @@ figure {
     letter-spacing: 1px;
     font-size: 68.5%; }
 
-.slide {
-  background: #008CBA;
-  background: #008CBA; }
-  .slide img {
-    opacity: 0.7;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-  .slide figcaption {
-    padding: 3em;
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s; }
-  .slide figcaption::before {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
-    border: 1px solid #fff;
-    content: ' '; }
-  .slide h2 {
-    margin: 20% 0 10px 0;
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: -webkit-transform 0.35s;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); }
-  .slide figcaption::before, .slide p {
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: scale(0);
-    transform: scale(0); }
-  .slide:hover h2 {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  .slide:hover figcaption::before, .slide:hover p {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-  .slide:hover figcaption {
-    background-color: rgba(58, 52, 42, 0); }
-  .slide:hover img {
-    opacity: 0.4;
-    -webkit-transform: scale(1.75);
-    transform: scale(1.75); }
+.slide img {
+  opacity: 0.7;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+.slide figcaption {
+  padding: 3em;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s; }
+.slide figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  content: ' '; }
+.slide h2 {
+  margin: 20% 0 10px 0;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0); }
+.slide figcaption::before, .slide p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+.slide:hover h2 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+.slide:hover figcaption::before, .slide:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+.slide:hover figcaption {
+  background-color: rgba(58, 52, 42, 0); }
+.slide:hover img {
+  opacity: 0.4;
+  -webkit-transform: scale(1.75);
+  transform: scale(1.75); }
 
 @media screen and (max-width: 60.5em) {
   .grid figure {
@@ -3190,3 +3183,40 @@ figure {
 @media screen and (max-width: 41.5em) {
   .grid figure {
     width: 100%; } }
+
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+  z-index: 2; }
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1; }
+
+/**** Isotope CSS3 transitions ****/
+.isotope, .isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width; }
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity; }
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s; }
+
+/* End: Recommended Isotope styles */

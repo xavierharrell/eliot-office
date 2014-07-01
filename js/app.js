@@ -21,6 +21,21 @@ $(function () {
     });
 
 
+var $container = $('.grid').isotope({
+    itemSelector: 'figure',
+    layoutMode: 'masonry',
+    masonry: {
+        columnWidth: '.slide',
+        gutter: 0,
+    }
+});
+
+$('.filter-select').on('click', 'li a', function(){
+        var filterValue = $(this).attr('data-filter');
+        $container.isotope({filter: filterValue});
+        return false;
+});
+
 /* Waypoint and Animation */
 $('.animate').css('opacity', '0');
 $('.animate').waypoint(function(){
