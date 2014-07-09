@@ -14,12 +14,12 @@
 
 .even {
     @extend .odd;
-    background: #71a441 url(/img/halftone.png);
+    background: #fff url('/assets/office/img/halftone.png');
 }
 
 .hiring {
     position: relative;
-    background: url(/img/office.jpg);
+    background: url('/assets/office/img/office.jpg');
     min-height: 20em;
     background-size: cover;
     background-position: fixed;

@@ -2894,11 +2894,11 @@ th.hide-for-touch {
   padding: 30px 0px; }
 
 .even {
-  background: #71a441 url(/img/halftone.png); }
+  background: #fff url('/assets/office/img/halftone.png'); }
 
 .hiring {
   position: relative;
-  background: url(/img/office.jpg);
+  background: url('/assets/office/img/office.jpg');
   min-height: 20em;
   background-size: cover;
   background-position: fixed; }
