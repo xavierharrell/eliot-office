@@ -2919,7 +2919,7 @@ th.hide-for-touch {
 .office {
   position: relative;
   display: block;
-  max-width: 1900px;
+  max-width: 100%;
   max-height: 600px;
   overflow: hidden; }
   .office img {
@@ -3037,6 +3037,10 @@ footer {
     text-transform: uppercase; }
   footer li {
     color: #eeeeee; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #00a7da; }
 
 .sub-footer {
   background-color: #12456b;
@@ -3080,6 +3084,325 @@ i {
 .icon-base {
   color: #008CBA; }
 
+/* Career Button */
+.career {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #008CBA;
+  border-color: #007295;
+  color: #fff;
+  background-color: #2cceff;
+  box-shadow: 0 8px #007fa6;
+  border-radius: 0.25em; }
+  .career:hover, .career:focus {
+    background-color: #007295; }
+  .career:hover, .career:focus {
+    color: #fff; }
+
+/*=============================================
+=            Owl Custom Navigation            =
+=============================================*/
+.owl-theme .owl-controls {
+  margin: 0 4px;
+  text-align: center; }
+
+/* Styling Next and Prev buttons */
+.owl-theme .owl-controls .owl-buttons div {
+  color: #e7e7e7;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 10px;
+  padding: 5px 30px;
+  font-size: 1em;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #008CBA;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5; }
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none; }
+
+/*-----  End of Owl Custom Navigation  ------*/
+/*======================================
+=            Owl Transition            =
+======================================*/
+/*
+ *  Owl Carousel CSS3 Transitions
+ *  v1.3.2
+ */
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 50%;
+  -moz-perspective: 1200px;
+  -moz-perspective-origin-x: 50%;
+  -moz-perspective-origin-y: 50%;
+  perspective: 1200px; }
+
+/* fade */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut 0.7s both ease;
+  -moz-animation: fadeOut 0.7s both ease;
+  animation: fadeOut 0.7s both ease; }
+
+.owl-fade-in {
+  -webkit-animation: fadeIn 0.7s both ease;
+  -moz-animation: fadeIn 0.7s both ease;
+  animation: fadeIn 0.7s both ease; }
+
+/* backSlide */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease; }
+
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease; }
+
+/* goDown */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade 0.7s ease both;
+  -moz-animation: scaleToFade 0.7s ease both;
+  animation: scaleToFade 0.7s ease both; }
+
+.owl-goDown-in {
+  -webkit-animation: goDown 0.6s ease both;
+  -moz-animation: goDown 0.6s ease both;
+  animation: goDown 0.6s ease both; }
+
+/* scaleUp */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom 0.5s ease both;
+  -moz-animation: scaleUpFrom 0.5s ease both;
+  animation: scaleUpFrom 0.5s ease both; }
+
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo 0.5s ease both;
+  -moz-animation: scaleUpTo 0.5s ease both;
+  animation: scaleUpTo 0.5s ease both; }
+
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  0% {
+    opacity: 1; } }
+
+@-moz-keyframes empty {
+  0% {
+    opacity: 1; } }
+
+@keyframes empty {
+  0% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-webkit-keyframes backSlideOut {
+  25% {
+    opacity: 0.5;
+    -webkit-transform: translateZ(-500px); }
+
+  75% {
+    opacity: 0.5;
+    -webkit-transform: translateZ(-500px) translateX(-200%); }
+
+  100% {
+    opacity: 0.5;
+    -webkit-transform: translateZ(-500px) translateX(-200%); } }
+
+@-moz-keyframes backSlideOut {
+  25% {
+    opacity: 0.5;
+    -moz-transform: translateZ(-500px); }
+
+  75% {
+    opacity: 0.5;
+    -moz-transform: translateZ(-500px) translateX(-200%); }
+
+  100% {
+    opacity: 0.5;
+    -moz-transform: translateZ(-500px) translateX(-200%); } }
+
+@keyframes backSlideOut {
+  25% {
+    opacity: 0.5;
+    transform: translateZ(-500px); }
+
+  75% {
+    opacity: 0.5;
+    transform: translateZ(-500px) translateX(-200%); }
+
+  100% {
+    opacity: 0.5;
+    transform: translateZ(-500px) translateX(-200%); } }
+
+@-webkit-keyframes backSlideIn {
+  0%, 25% {
+    opacity: 0.5;
+    -webkit-transform: translateZ(-500px) translateX(200%); }
+
+  75% {
+    opacity: 0.5;
+    -webkit-transform: translateZ(-500px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) translateX(0); } }
+
+@-moz-keyframes backSlideIn {
+  0%, 25% {
+    opacity: 0.5;
+    -moz-transform: translateZ(-500px) translateX(200%); }
+
+  75% {
+    opacity: 0.5;
+    -moz-transform: translateZ(-500px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateZ(0) translateX(0); } }
+
+@keyframes backSlideIn {
+  0%, 25% {
+    opacity: 0.5;
+    transform: translateZ(-500px) translateX(200%); }
+
+  75% {
+    opacity: 0.5;
+    transform: translateZ(-500px); }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0) translateX(0); } }
+
+@-webkit-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8); } }
+
+@-moz-keyframes scaleToFade {
+  to {
+    opacity: 0;
+    -moz-transform: scale(0.8); } }
+
+@keyframes scaleToFade {
+  to {
+    opacity: 0;
+    transform: scale(0.8); } }
+
+@-webkit-keyframes goDown {
+  from {
+    -webkit-transform: translateY(-100%); } }
+
+@-moz-keyframes goDown {
+  from {
+    -moz-transform: translateY(-100%); } }
+
+@keyframes goDown {
+  from {
+    transform: translateY(-100%); } }
+
+@-webkit-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.5); } }
+
+@-moz-keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.5); } }
+
+@keyframes scaleUpFrom {
+  from {
+    opacity: 0;
+    transform: scale(1.5); } }
+
+@-webkit-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.5); } }
+
+@-moz-keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    -moz-transform: scale(1.5); } }
+
+@keyframes scaleUpTo {
+  to {
+    opacity: 0;
+    transform: scale(1.5); } }
+
+/*-----  End of Owl Transition  ------*/
 .grid {
   overflow: hidden;
   margin: 0 auto;
@@ -3108,6 +3431,7 @@ figure {
     color: #fff;
     text-transform: uppercase;
     font-size: 1.25em;
+    width: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibilty: hidden; }
     figure figcaption::before, figure figcaption::after {

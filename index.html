@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{OFFICE} - Eliot Management Group</title>
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="bower_components/OwlCarousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css">
     <link rel="stylesheet" href="bower_components/fontello-c9be44eb/css/fontello.css">
@@ -247,7 +248,7 @@
         <div class="small-12 medium-12 large-12 columns text-center">
           <h3>Video Testiomonials</h3>
           <hr>
-          <div class="video-frame">
+          <div class="owl-carousel">
             <div><img src="http://placehold.it/475x250" alt=""></div>
             <div><img src="http://placehold.it/475x250" alt=""></div>
             <div><img src="http://placehold.it/475x250" alt=""></div>
@@ -262,7 +263,7 @@
       <div class="small-12 medium-6 large-12 columns">
       <div class="overlay text-center">
                     <h4>Interested in a position</h4>
-          <a href="#" class="button">Visit our Careers Site</a>
+          <a href="#" class="button career">Visit our Careers Site</a>
       </div>
       </div>
         </div>
@@ -273,7 +274,7 @@
         <div class="small-12 medium-12 large-12 columns text-center">
           <h3>What our people are saying?</h3>
           <hr>
-          <div class="testi-frame">
+          <div id="owl-testi" class="owl-carousel">
             <div class="testi-card">
               <img class="circle" class="text-center" src="http://placehold.it/100x100" alt="">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -442,7 +443,7 @@
         <div class="small-12 medium-4 large-4 columns">
           <h4>Follow Us</h4>
           <ul class="no-bullet">
-            <li><i class="icon-facebook"></i>Facebook</li>
+            <li><i class="icon-facebook"></i><a href="">Facebook</a></li>
             <li><i class="icon-twitter"></i>Twitter</li>
             <li><i class="icon-linkedin"></i>Linkedin</li>
           </ul>
@@ -468,6 +469,7 @@
   <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
   <script src="bower_components/jquery-waypoints/waypoints.min.js"></script>
   <script src="bower_components/jquery.smooth-scroll/jquery.smooth-scroll.min.js"></script>
+  <script src="bower_components/OwlCarousel/owl-carousel/owl.carousel.min.js"></script>
   <script src="bower_components/wow/dist/wow.min.js"></script>
   <script src="js/app.js"></script>
 </body>

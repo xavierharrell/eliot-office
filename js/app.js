@@ -1,16 +1,18 @@
 /* Scroller for the Testimonials */
 $(function () {
-    $('.testi-frame').slick({
-            dots: true,
-            autoplay: true
-    });
-        $('.video-frame').slick({
-            dots: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            centerMode: true,
-            centerPadding: '200px',
+        var owl = $("#owl-testi");
+
+        owl.owlCarousel({
+            singleItem: true,
+            transitionStyle: "fade",
+            autoPlay: true,
+            items: 1,
+     });
+        $('.owl-carousel').owlCarousel({
+            items: 2,
+            autoPlay: true,
+            navigation: true,
+
     });
 });
 
