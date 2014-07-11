@@ -2937,6 +2937,213 @@ th.hide-for-touch {
     display: block;
     overflow: hidden; }
 
+.austin {
+  background: url('/assets/uploads/office/austin.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.boise {
+  background: url('/assets/uploads/office/boise.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.charlotte {
+  background: url('/assets/uploads/office/charlotte.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.chicago {
+  background: url('/assets/uploads/office/chicago.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.dallas {
+  background: url('/assets/uploads/office/dallas.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.denver {
+  background: url('/assets/uploads/office/denver.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.everett {
+  background: url('/assets/uploads/office/everett.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.ftworth {
+  background: url('/assets/uploads/office/ftworth.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.greenville {
+  background: url('/assets/uploads/office/greenville.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.houston {
+  background: url('/assets/uploads/office/houston.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.jacksonville {
+  background: url('/assets/uploads/office/jacksonville.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.kansascity {
+  background: url('/assets/uploads/office/kansas-city.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.milwaukee {
+  background: url('/assets/uploads/office/milwaukee.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.oklahomacity {
+  background: url('/assets/uploads/office/oklahoma-city.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.phoenix {
+  background: url('/assets/uploads/office/phoenix.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.portland {
+  background: url('/assets/uploads/office/portland.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.saltlakecity {
+  background: url('/assets/uploads/office/salt-lake-city.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.seattle {
+  background: url('/assets/uploads/office/seattle.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.spokane {
+  background: url('/assets/uploads/office/spokane.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.tacoma {
+  background: url('/assets/uploads/office/tacoma.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.tampa {
+  background: url('/assets/uploads/office/tampa.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.tucson {
+  background: url('/assets/uploads/office/tucson.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
+.tulsa {
+  background: url('/assets/uploads/office/tulsa.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%; }
+
 @media only screen and (max-width: 980px) {
   .office {
     position: relative;
@@ -2956,7 +3163,7 @@ th.hide-for-touch {
   position: absolute;
   width: 50em;
   top: -50em;
-  left: -5em;
+  left: 0;
   background: rgba(0, 140, 186, 0.6);
   margin: 0 auto;
   border: 0px; }

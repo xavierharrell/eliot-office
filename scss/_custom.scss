@@ -64,6 +64,129 @@
     }
 }
 
+@mixin location{
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden;
+  padding-top: -50px;
+  width: 100%;
+  height: 75%;
+}
+
+.austin{
+  background: url('/assets/uploads/office/austin.jpg') no-repeat;
+  @include location;
+}
+
+.boise{
+    background: url('/assets/uploads/office/boise.jpg') no-repeat;
+    @include location;
+}
+
+.charlotte{
+  background: url('/assets/uploads/office/charlotte.jpg') no-repeat;
+    @include location;
+}
+
+.chicago{
+  background: url('/assets/uploads/office/chicago.jpg') no-repeat;
+    @include location;
+}
+
+.dallas{
+  background: url('/assets/uploads/office/dallas.jpg') no-repeat;
+    @include location;
+}
+
+.denver{
+  background: url('/assets/uploads/office/denver.jpg') no-repeat;
+    @include location;
+}
+
+.everett{
+  background: url('/assets/uploads/office/everett.jpg') no-repeat;
+    @include location;
+}
+
+.ftworth{
+  background: url('/assets/uploads/office/ftworth.jpg') no-repeat;
+    @include location;
+}
+
+.greenville{
+  background: url('/assets/uploads/office/greenville.jpg') no-repeat;
+    @include location;
+}
+
+.houston{
+  background: url('/assets/uploads/office/houston.jpg') no-repeat;
+    @include location;
+}
+
+.jacksonville{
+  background: url('/assets/uploads/office/jacksonville.jpg') no-repeat;
+    @include location;
+}
+
+.kansascity{
+  background: url('/assets/uploads/office/kansas-city.jpg') no-repeat;
+    @include location;
+}
+
+.milwaukee{
+  background: url('/assets/uploads/office/milwaukee.jpg') no-repeat;
+    @include location;
+}
+
+.oklahomacity{
+  background: url('/assets/uploads/office/oklahoma-city.jpg') no-repeat;
+    @include location;
+}
+
+.phoenix{
+  background: url('/assets/uploads/office/phoenix.jpg') no-repeat;
+    @include location;
+}
+
+.portland{
+  background: url('/assets/uploads/office/portland.jpg') no-repeat;
+    @include location;
+}
+
+.saltlakecity{
+  background: url('/assets/uploads/office/salt-lake-city.jpg') no-repeat;
+    @include location;
+}
+
+.seattle{
+  background: url('/assets/uploads/office/seattle.jpg') no-repeat;
+    @include location;
+}
+
+.spokane{
+  background: url('/assets/uploads/office/spokane.jpg') no-repeat;
+    @include location;
+}
+
+.tacoma{
+  background: url('/assets/uploads/office/tacoma.jpg') no-repeat;
+    @include location;
+}
+
+.tampa{
+  background: url('/assets/uploads/office/tampa.jpg') no-repeat;
+    @include location;
+}
+
+.tucson{
+  background: url('/assets/uploads/office/tucson.jpg') no-repeat;
+    @include location;
+}
+
+.tulsa{
+  background: url('/assets/uploads/office/tulsa.jpg') no-repeat;
+    @include location;
+}
 @media only screen and (max-width: 980px) {
     .office {
         position: relative;
@@ -81,7 +204,7 @@
     position: absolute;
     width: 50em;
     top: -50em;
-    left: -5em;
+    left: 0;
     background: rgba($primary-color, 0.6);
     margin: 0 auto;
     border: 0px;
